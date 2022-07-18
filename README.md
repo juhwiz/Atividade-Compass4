@@ -1,2 +1,2 @@
 # Atividade-Compass4
-Repositorio dedicado a quarta atovidade da compass
+Repositorio dedicado a quarta atividade da compass
