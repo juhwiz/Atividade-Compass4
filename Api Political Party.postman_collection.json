@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "e141dba3-1400-4efc-bc36-5c6bf1429a26",
+		"name": "Api Political Party",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21729158"
+	},
+	"item": [
+		{
+			"name": "PoliticalParty - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Partido Honesto\",\r\n    \"sigla\":\"PH\",\r\n    \"ideologia\":\"CENTRO\",\r\n    \"dataFundacao\":\"2022-05-21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/partidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"partidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PoliticalParty - Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/partidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"partidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PoliticalParty - GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/partidos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"partidos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PoliticalParty - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/partidos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"partidos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PoliticalParty - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Partido Mentiroso\",\r\n    \"sigla\":\"PH\",\r\n    \"ideologia\":\"ESQUERDA\",\r\n    \"dataFundacao\":\"2022-05-21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/partidos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"partidos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PoliticalParty - GetByIdeologia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/partidos?ideologia=ESQUERDA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"partidos"
+					],
+					"query": [
+						{
+							"key": "ideologia",
+							"value": "ESQUERDA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Bonoro\",\r\n    \"cargoPolitico\":\"PRESIDENTE\",\r\n    \"dataNascimento\":\"1850-05-20\",\r\n    \"sexo\":\"MASCULINO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/associados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/associados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/associados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/associados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Bonoro\",\r\n    \"cargoPolitico\":\"PRESIDENTE\",\r\n    \"dataNascimento\":\"1850-05-20\",\r\n    \"sexo\":\"MASCULINO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/associados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - GetByOffice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/associados?cargoPolitico=PRESIDENTE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados"
+					],
+					"query": [
+						{
+							"key": "cargoPolitico",
+							"value": "PRESIDENTE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - SortByName",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - AssociationWithPoliticalParty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idAssociado\":\"1\",\r\n    \"idPartido\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/associados/partidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados",
+						"partidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associates - DeleteAssociation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/associados/1/partidos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"associados",
+						"1",
+						"partidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
